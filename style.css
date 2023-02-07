@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fc-nav: #FFF;
+  --fc-nav-secondary: #C4C4CC;
+  --fc-text: #E1E1E6;
+  --fc-text-btn: #FFF;
+
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  max-width: 130rem;
+  width: 100%;
+  max-height: 72rem;
+  height: 100%;
+  position: absolute;
+}
+
+#container.bg-home{
+  background: url('./images/home.png') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 12.2rem;
+  padding-left: 7.2rem;
+  padding-top: 4rem;
+}
+
+nav {
+  width: 48.9rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+ul {
+  display: flex;
+  width: 39.6rem;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  line-height: 100%;
+  color: var(--fc-nav-secondary);
+  padding: 0 0.9rem;
+}
+
+#app.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#app.home h1 {
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--fc-text);
+  margin-top: 17.2rem;
+  margin-bottom: 2.4rem;
+}
+
+#app.home button {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid var(--fc-text-btn);
+  border-radius: .5rem;  
+  width: 19.5rem;
+  height: 4.8rem; 
+  color: var(--fc-text-btn);
+  background-color: unset;
+}
